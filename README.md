@@ -1,5 +1,6 @@
-[![NPM](https://nodei.co/npm/memanki.png)](https://nodei.co/npm/memanki/) 
- ![npm](https://img.shields.io/npm/dt/memanki.svg)
+# Notes by me
+
+Fixed a bug where the download would fail if the course name had illegal filename characters such as "*" or "?"
 
 # MEMANKI
 
