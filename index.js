@@ -4,6 +4,8 @@ const fs = require('fs');
 const ankiExport = require('anki-apkg-export').default;
 
 const saveDeck = (ankiDeck, deckName) => {
+  const regex =/\\|\/|:|\*|\?|"|<|>|\|/g; // Remove all characeters that are illegal to have as filename on windows.
+  deckName = deckName.replace(regex,"")
   ankiDeck
   .save()
   .then(zip => {
